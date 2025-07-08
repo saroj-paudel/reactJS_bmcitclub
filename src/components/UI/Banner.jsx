@@ -1,4 +1,5 @@
 import React from 'react'
+import { useLocation } from 'react-router-dom'
 
 // function Banner(props) {
 //   return (
@@ -11,9 +12,14 @@ import React from 'react'
 // }
 
 function Banner({title,subtitle,description}) {
+    const location = useLocation()
+    console.log(location);
+    
   return (
     <div>
-      {title} <br />
+        {location.pathname} <br />
+        <hr />
+      <p className='text-xl text-blue-600 '>{title}</p> <br />
       {subtitle} <br />
       {description} <br />
     </div>
