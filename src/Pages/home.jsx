@@ -7,9 +7,9 @@ export default function Home() {
   return (
     <div>
      <Banner title="home" subtitle="it's a home page"  description="lovely Home page"/> <br />
-     <button className='rounded-full bg-slate-900 text-slate-400 px-2' onClick={()=>{
+     {/* <button className='rounded-full bg-slate-900 text-slate-400 px-2' onClick={()=>{
      Navigate('/about')
-     }}>About US</button>
+     }}>About US</button> */}
     </div>
   )
 }
