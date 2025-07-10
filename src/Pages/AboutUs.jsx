@@ -11,10 +11,10 @@ export default function AboutUs() {
     <div>
       <Banner title="about"  subtitle="it's a about page" description="lovely about page"/>
     </div>
-<br />
-      <button className='rounded-full bg-slate-900 text-slate-400 px-2 text-3xl' onClick={()=>{
+{/* <br /> */}
+      {/* <button className='rounded-full bg-slate-900 text-slate-400 px-2 text-3xl' onClick={()=>{
           Navigate(-1)
-        }}> &lt; Go Back</button>
+        }}> &lt; Go Back</button> */}
 
         </>
   )
