@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import Cards from './Cards'
-
+import axios from 'axios'
 // function Banner(props) {
 //   return (
 //     <div>
@@ -44,6 +44,25 @@ const cards = [
   }
 ]
 
+
+const getData=()=>{
+  try{
+    axios.get('https://gastro-backend.e-aribt.com/api/services').then(res=>{
+      console.log(res);
+      
+    }).catch(err=>{
+      console.log(err);
+      
+    })
+  }catch(error){
+console.log(error);
+
+  }
+}
+
+useEffect(()=>{
+getData()
+},[])
 
 
   return (
