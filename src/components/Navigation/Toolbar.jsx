@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { IoMenu } from "react-icons/io5";
 
 function Toolbar() {
   const location = useLocation()
@@ -31,7 +32,7 @@ function Toolbar() {
             </div>
           })
         }
-        
+        <IoMenu className='text-white text-3xl'/>
       </div>
     </div>
   )
